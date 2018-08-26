@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Order Ice Cream Here</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/better-ice-cream.js"></script>
+</head>
+<body style="background-image: url('assets/soft_serve.jpg'); background-repeat: repeat;">
+
+<div class="container" style="background: #9fcdff">
+    <h2>Place your ice cream order</h2>
+    <form class="form-horizontal" id="form">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="name">Name:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="flavor1">Flavor1:</label>
+            <select class="form-control col-sm-10" id="flavor1">
+                <option>Chocolate</option>
+                <option>Vanilla</option>
+                <option>Chocolate Chip</option>
+                <option>Strawberry</option>
+                <option>Cookies and Cream</option>
+                <option>Cookie Dough</option>
+                <option>Black Walnut</option>
+                <option>Butter Pecan</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="flavor2">Flavor2:</label>
+            <select class="form-control col-sm-10" id="flavor2">
+                <option>Chocolate</option>
+                <option>Vanilla</option>
+                <option>Chocolate Chip</option>
+                <option>Strawberry</option>
+                <option>Cookies and Cream</option>
+                <option>Cookie Dough</option>
+                <option>Black Walnut</option>
+                <option>Butter Pecan</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" onclick="parseBetterOrder()" class="btn btn-default">Submit</button>
+            </div>
+        </div>
+    </form>
+    <div class="container" style="height: 50px;">
+        <h2 id="messageBox"></h2>
+    </div>
+</div>
+
+
+</body>
+</html>
